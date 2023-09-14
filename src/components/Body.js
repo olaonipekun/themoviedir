@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Body = () => {
+const Body = (props) => {
+    const bodystyle = props.bodystyle;
   return (
-    <div>
-      Hello Body
+    <div className={bodystyle}>
+      
     </div>
   );
 }

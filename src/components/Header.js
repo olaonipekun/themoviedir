@@ -5,9 +5,9 @@ const Header = (props) => {
     const span = props.span
     return (
       <>
-        <div className=''>
+        <div className='col-span-full p-0 bg-blue-600 row-span-1'>
           <div className={span}>
-            The Movie Database again
+            The Movie Database
             <img src={source} alt='' className='object-fill' />
           </div>
         </div>
