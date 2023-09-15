@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     const data = [
@@ -22,7 +23,7 @@ const Footer = () => {
           id: 2,
           icon: "fas fa-tv",
           name: "TV Series",
-          link: "/TV",
+          link: "/tvseries",
           color: "Mediumslateblue",
           fontColor: "text-[#7b68ee]"
         },
@@ -30,16 +31,16 @@ const Footer = () => {
       return (
         <>
 
-          <div className="grid grid-cols-3">
+          <div className="grid grid-cols-3 w-full">
             {data.map((Val) => {
               return (
-                <>
-                  <button key={Val.id} className="rounded-md text-white hover:bg-slate-700">
+                <NavLink to={`${Val.link}`}>
+                  <button key={Val.id} className="p-2 rounded-md text-white hover:bg-slate-700 w-full">
                     <i className={`${Val.icon}`} id="fire" style={{color: `${Val.color}`}}></i>
                     <br />
                     <h5 className={`${Val.fontColor}`}>{Val.name}</h5>
                   </button>
-                </>
+                </NavLink>
               );
             })}
           </div>
