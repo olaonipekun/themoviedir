@@ -34,7 +34,7 @@ const Footer = () => {
             {data.map((Val) => {
               return (
                 <>
-                  <button key={Val.id} className="rounded-md text-white hover:bg-slate-500">
+                  <button key={Val.id} className="rounded-md text-white hover:bg-slate-700">
                     <i className={`${Val.icon}`} id="fire" style={{color: `${Val.color}`}}></i>
                     <br />
                     <h5 className={`${Val.fontColor}`}>{Val.name}</h5>
