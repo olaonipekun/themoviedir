@@ -1,42 +1,48 @@
 import React from 'react';
 
-const Footer = (props) => {
+const Footer = () => {
     const data = [
         {
+          id: 0,
           icon: "fas fa-fire-alt",
           name: "Trending",
-          link: "/"
+          link: "/",
+          color: "Tomato",
+          fontColor: "text-[#ff6347]"
         },
         {
+          id: 1,
           icon: "fas fa-film",
           name: "Movies",
-          link: "/movies"
+          link: "/movies",
+          color: "Dodgerblue",
+          fontColor: "text-[#1e90ff]"
         },
         {
+          id: 2,
           icon: "fas fa-tv",
           name: "TV Series",
-          link: "/TV"
+          link: "/TV",
+          color: "Mediumslateblue",
+          fontColor: "text-[#7b68ee]"
         },
       ];
       return (
         <>
-        <div className="">
-          <div className="">
-            <div className="grid grid-cols-3">
-              {data.map((Val) => {
-                return (
-                  <>
-                    <button className="rounded-md text-white hover:bg-slate-500">
-                      <i className={`${Val.icon}`} id="fire"></i>
-                      <br />
-                      <h5 className="">{Val.name}</h5>
-                    </button>
-                  </>
-                );
-              })}
-            </div>
+
+          <div className="grid grid-cols-3">
+            {data.map((Val) => {
+              return (
+                <>
+                  <button key={Val.id} className="rounded-md text-white hover:bg-slate-500">
+                    <i className={`${Val.icon}`} id="fire" style={{color: `${Val.color}`}}></i>
+                    <br />
+                    <h5 className={`${Val.fontColor}`}>{Val.name}</h5>
+                  </button>
+                </>
+              );
+            })}
           </div>
-        </div>
       </>
       )
 }
