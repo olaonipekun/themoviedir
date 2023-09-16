@@ -10,7 +10,7 @@ const Body = (props) => {
         <i className="text-2xl fas fa-fire mx-4 text-danger" style={{color: "tomato"}}></i>
         <h4 className='text-2xl font-bold text-slate-800 hover:transition-all'> Trending Today </h4>
       </div>
-      <div className="md:container min-w-full md:mx-auto grid grid-cols-3 gap-4">
+      <div className="md:container min-w-full sm:grid-cols-1 md:mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         <Moviemap />
       </div>
     </div>

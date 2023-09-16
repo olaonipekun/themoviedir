@@ -31,7 +31,7 @@ const Footer = () => {
       return (
         <>
 
-          <div className="grid grid-cols-3 w-full">
+          <div className="grid grid-cols-3 w-full sm:sticky">
             {data.map((Val) => {
               return (
                 <NavLink key={Val.id} to={`${Val.link}`}>
