@@ -1,15 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = (props) => {
-    const source = props.source
-    const span = props.span
+    const headStyle = props.headStyle
     return (
       <>
-        <div className='col-span-full p-0 bg-slate-700 row-span-1'>
-          <div className={span}>
+        <div className={headStyle}>
+          <Link to="/">
             The Movie Directory
-            <img src={source} alt='' className='object-fill' />
-          </div>
+          </Link>
         </div>
       </>
     )

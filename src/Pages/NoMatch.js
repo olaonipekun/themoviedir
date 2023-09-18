@@ -6,7 +6,7 @@ const NoMatch = () => {
     <div>
       Nothing to see here lol!
       <div>
-        <NavLink to="/"> kindly go back please</NavLink>
+        <NavLink to="/movies"> kindly go back please</NavLink>
       </div>
     </div>
     
