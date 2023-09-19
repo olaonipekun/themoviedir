@@ -6,7 +6,7 @@ const Header = (props) => {
     return (
       <>
         <div className={headStyle}>
-          <Link to="/">
+          <Link to="/movies">
             The Movie Directory
           </Link>
         </div>
